@@ -1,7 +1,18 @@
 #include<stdio.h>
+#pragma warning(disable:4996)
 int main()
 {
-	int number[8] = { 1,2,3,4,5,6,7,8 }, i;
-	for (i = 7;i >= 0;i--)
-		printf("%d", number[i]);
+	float i=-1,n=1,sum_1=0, sum_2=0;
+	int limit;
+	scanf("%d", &limit);
+	while (n<=limit)
+	{
+		sum_1 += 1.0 /n ;
+		i = (-1)* i;
+		sum_2 += i/ n;
+		n++;
+	}
+	printf("%f\n", sum_1);
+	printf("%f\n", sum_2);
+	printf("%f\n", sum_1 + sum_2);
 }
